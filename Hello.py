@@ -5,7 +5,7 @@ dataset = pd.read_csv("data.csv")
 
 x = dataset.iloc[:,0]
 y = dataset.iloc[:,1]
-image_url = "https://ibb.co/1sJPZwb"
+image_url = "number-one.png"
 
 
 # Streamlit app
