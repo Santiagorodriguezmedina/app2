@@ -5,9 +5,6 @@ dataset = pd.read_csv("data.csv")
 
 x = dataset.iloc[:,0]
 y = dataset.iloc[:,1]
-p0 = "pp.png"
-
-
 
 # Streamlit app
 def main():
@@ -19,7 +16,7 @@ def main():
 
         for link in range(0,6):
             if slide_name == f"{x[link]}":
-                st.image(f"p{link}", use_column_width=True)
+                st.image(f"p{link}.png", use_column_width=True)
 
 
 if __name__ == "__main__":
