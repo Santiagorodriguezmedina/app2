@@ -16,7 +16,7 @@ def main():
 
         for link in range(0,6):
             if slide_name == f"{x[link]}":
-                st.image(f"p{link}.png", use_column_width=True)
+                st.image(f"P{link}.png", use_column_width=True)
 
 
 if __name__ == "__main__":
