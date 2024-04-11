@@ -16,6 +16,9 @@ def main():
 
         for link in range(0,6):
             if slide_name == f"{x[link]}":
+                print(slide_name)
+                print(f"{x[link]}")
+                print(f"P{link}.png")
                 st.image(f"P{link}.png", use_column_width=True)
 
 
