@@ -5,13 +5,8 @@ dataset = pd.read_csv("data.csv")
 
 x = dataset.iloc[:,0]
 y = dataset.iloc[:,1]
-p1 = "number-one.png"
-p2 = "number-two.png"
-p3 = "number-three.png"
-p4 = "number-four.png"
-p5 = "number-five.png"
-p6 = "number-six.png"
-p7 = "number-seven.png"
+p0 = "p0.png"
+
 
 
 # Streamlit app
@@ -21,6 +16,7 @@ def main():
     if selected_slide:
         slide_name, link = selected_slide
         st.markdown(f"[{slide_name}]({link})")
+
         for link in range(0,6):
             if slide_name == f"{x[link]}":
                 st.image(f"p{link}", use_column_width=True)
