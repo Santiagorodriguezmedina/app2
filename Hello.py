@@ -5,7 +5,7 @@ dataset = pd.read_csv("data.csv")
 
 x = dataset.iloc[:,0]
 y = dataset.iloc[:,1]
-p0 = "p0.png"
+p0 = "pp.png"
 
 
 
